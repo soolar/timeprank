@@ -76,12 +76,41 @@ BucketAdd("sugoi");
 BucketAdd("lame");
 BucketAdd("disgusting");
 BucketAdd("repulsive");
+BucketAdd("triggered");
 // in very rare cases, this will go crazy. intended.
 BucketAdd("#{adjective} #{adjective}");
 BucketAdd("#{adjective} #{adjective}");
 BucketAdd("#{adjective} #{adjective}");
 BucketAdd("#{adjective} #{adjective}");
 BucketAdd("#{adjective} #{adjective}");
+
+BucketSet("gladjective"); // I'm not sorry
+BucketAdd("happy");
+BucketAdd("hilarious");
+BucketAdd("amazing");
+BucketAdd("splendiforous"); // is that how you spell that? eh, whatever
+BucketAdd("splendid");
+BucketAdd("totally radical");
+BucketAdd("sicknasty radicool off the handle"); // NOT. SORRY.
+BucketAdd("gladiforous"); // also not sure that that's spelled right, not that it's a real word
+BucketAdd("fantastic");
+BucketAdd("fantabulous");
+
+BucketSet("badjective"); // super not apologizing
+BucketAdd("mean");
+BucketAdd("angry");
+BucketAdd("dangerous");
+BucketAdd("scary");
+BucketAdd("sad");
+BucketAdd("lame");
+BucketAdd("boring");
+BucketAdd("terrible");
+BucketAdd("atrocious");
+BucketAdd("awful");
+BucketAdd("trashtacular");
+BucketAdd("ugly");
+BucketAdd("gross");
+BucketAdd("pathetic");
 
 BucketSet("character");
 BucketAdd("girl");
@@ -154,6 +183,19 @@ BucketAdd("k");
 BucketAdd("K");
 BucketAdd("x");
 BucketAdd("X");
+
+BucketSet("messages");
+BucketAdd("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
+  "#{character1} was #{badstuff1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
+  "#{number} #{timeunit} or you will be #{badstuff1} by #{adjective1} #{character1}#{!} " +
+  "#{apology} for danger but I would be #{badstuff1} by #{adjective1} #{character1} if I didn't " +
+  "send this to someone you understand right#{?}");
+BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message within #{number1} " +
+  "#{timeunit1}, the #{gladjective} #{gladjective} #{character} will bless you with " +
+  "#{gladjective} times for like, the rest of your #{gladjective} life#{?}#{!} But if you don't " +
+  "forward it within #{number1} #{timeunit1}, the #{badjective} #{badjective} #{character} will " +
+  "curse you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
+  "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
 
 void adCdhRatcer(buffer b, string c)
 {
@@ -250,11 +292,7 @@ string ParseBuckets(string s)
 
 string ShittyChainMail()
 {
-  return mAKSpeldBaD(ParseBuckets("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then " +
-    "#{adjective1} #{character1} was #{badstuff1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
-    "#{number} #{timeunit} or you will be #{badstuff1} by #{adjective1} #{character1}#{!} #{apology} for " +
-    "danger but I would be #{badstuff1} by #{adjective1} #{character1} if I didn't send this to someone " +
-    "you understand right#{?}"));
+  return (ParseBuckets(BucketGet("messages")));
 }
 
 void TimePrank(string playerName)
