@@ -292,7 +292,7 @@ string ParseBuckets(string s)
 
 string ShittyChainMail()
 {
-  return (ParseBuckets(BucketGet("messages")));
+  return mAKSpeldBaD(ParseBuckets(BucketGet("messages")));
 }
 
 void TimePrank(string playerName)
