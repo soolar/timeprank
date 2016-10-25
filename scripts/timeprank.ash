@@ -200,6 +200,7 @@ BucketAdd($strings[
   seconds, secs, minutes, mins, hours, days, months, years, decades, nanoseconds, microseconds,
   picoseconds, light-miles, light-feet, shakes, jiffies, microfortnights, dog years, Friedmans,
   microcenturies, nanocenturies, tatums, adventures, turns, fights, combats, non-combats,
+  semi-rares, ascensions, moments, seasons, milliseconds, rollovers, weeks, fortnights,
 ]);
 
 BucketSet("apology");
