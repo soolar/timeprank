@@ -67,19 +67,39 @@ BucketAdd("#{?}#{?}"); // it's astronomically unlikely that this will chain so m
 BucketSet("gladjective"); // I'm not sorry
 BucketAdd($strings[
   happy, hilarious, amazing, splendiforous, splendid, totally radical, gladiforous, fantastic,
-  sicknasty radicool off the handle, fantabulous, generous, dank, awesome, kawaii, sugoi,
+  sicknasty radicool off the handle, fantabulous, generous, dank, awesome, kawaii, sugoi, adroit,
+  clever, resourceful, arcadian, serene, comely, attractive, wonderful, efficacious, jocular,
+  playful, luminous, munificent, lavish, propitious, auspicious, advantageous, benevolent,
+  salubrious, healthful, healthy, excellent, sagacious, wise, discerning,
 ]);
 
 BucketSet("badjective"); // super not apologizing
 BucketAdd($strings[
   mean, angry, dangerous, scary, sad, lame, boring, terrible, atrocious, awful, trashtacular, ugly,
   gross, pathetic, DERANGED, psychotic, cursed, lonely, pitiful, mad, disgusting, repulsive,
-  triggered,
+  triggered, baleful, deadly, foreboding, bellicose, quarrelsome, belligerent, boorish, crude,
+  insensitive, calamitous, disastrous, caustic, corrosive, sarcastic, corpulent, obese, crapulous,
+  defamatory, dowdy, shabby, shoddy, crappy, craptacular, feckless, weak, irresponsible, execrable,
+  wretched, detestable, invidious, resentful, encious, obnoxious, jejune, dull, puerile, lachrymose,
+  tearful, mordant, biting, incisive, pungent, sleazy, spooky, stinky, rank, nefarious, wicked,
+  noxious, harmful, corrupting, obtuse, blunt, stupid, pernicious, injurious, petulant, rude,
+  ill-mannered, impolite, banal, querulous, cranky, whiny, rebarbative, irritating, repellent,
+  rhadamanthine, risible, laughable, hilarious (in a bad way), funny (but not the good kind),
+  turgid, swollen, pompous, withering, devastating, destructive, powerless, pointless, pitiable,
 ]);
 
 BucketSet("adjective");
 BucketAdd($strings[
-  little, old, young, scared,
+  little, old, young, scared, ordinary, normal, plain, moderately attractive, average, acceptable,
+  passable, decent, reasonably intelligent, adequate, weird, bizarre, strange, abnormal, adamant,
+  contumacious, didactic, dilatory, equanimous, endemic, fastidious, meticulous, picky, fecund,
+  friable, fulsome, garrulous, wordy, talkative, guileless, naive, gustatory, impudent,
+  contemptuous, insolent, insidious, subtle, limpid, simple, loquacious, artificial, judicious,
+  mendacious, deceptive, pretentious, parsimonious, frugal, puckish, impish, quiescent, inactive,
+  untroublesome, lazy, sclerotic, serpentine, spasmodic, excitable, taciturn, quiet, reticent,
+  closemouthed, tenacious, persistent, cohesive, tremulous, nervous, trembling, timid, sensitive,
+  ubiquitous, pervasive, inescapable, trenchant, sharp, distinct, uxorious, verdant, voluble, glib,
+  voracious, ravenous, insatiable, wheedling, zealous, eager, devoted, dedicated, adventurous,
 ]);
 foreach i,adj in buckets["gladjective"]
   BucketAdd(adj);
