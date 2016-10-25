@@ -200,8 +200,11 @@ BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message wit
   "curse you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
   "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
 
-void adCdhRatcer(buffer b, string c)
+string swapletter = "";
+
+void adCdhRatcer(buffer b, string c, boolean protect)
 {
+  // protect basically means only mess with the capitalization
   int rnad = random(100);
   if(rnad < 30)
    c = c.to_lower_case();
@@ -209,20 +212,41 @@ void adCdhRatcer(buffer b, string c)
     c = c.to_upper_case();
 
   rnad = random(100);
-  if(rnad < 5)
+  if(rnad < 3)
+    adCdhRatcer(b, c, protect);
+
+  if(!protect)
   {
-    switch(c.to_lower_case())
+    rnad = random(100);
+    if(rnad < 5)
     {
-      case "a": case "e": case "i": case "o": case "u":
-        c = BucketGet("vowel");
-        break;
-      case "c": case "k": case "x":
-        c = BucketGet("ckx");
-        break;
+      switch(c.to_lower_case())
+      {
+        case "a": case "e": case "i": case "o": case "u":
+          c = BucketGet("vowel");
+          break;
+        case "c": case "k": case "x":
+          c = BucketGet("ckx");
+          break;
+      }
+    }
+
+    rnad = random(100);
+    if(rnad < 6 && swapletter == "")
+    {
+      swapletter = c;
+      return;
     }
   }
 
+  if(protect)
+  {
+    b.append(swapletter);
+    swapletter = "";
+  }
   b.append(c);
+  b.append(swapletter);
+  swapletter = "";
 }
 
 string mAKSpeldBaD(string s)
@@ -232,28 +256,13 @@ string mAKSpeldBaD(string s)
   while(m.find())
   {
     res.append(m.group(1));
-    matcher inner = create_matcher("(.)(.?)", m.group(2));
-    while(inner.find())
+    string [int] letters = m.group(2).split_string("");
+    foreach i,l in letters
     {
-      string char1 = inner.group(1);
-      string char2 = inner.group(2);
-      int radn = random(100);
-      if(radn < 5)
-        res.adCdhRatcer(char1);
-      radn = random(100);
-      if(radn < 15)
-      {
-        res.adCdhRatcer(char2);
-        res.adCdhRatcer(char1);
-      }
+      if(i == 0 || i + 1 == letters.count())
+        res.adCdhRatcer(l, true);
       else
-      {
-        res.adCdhRatcer(char1);
-        res.adCdhRatcer(char2);
-      }
-      radn = random(100);
-      if(radn < 5)
-        res.adCdhRatcer(char2);
+        res.adCdhRatcer(l, false);
     }
     res.append(m.group(3));
   }
