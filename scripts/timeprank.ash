@@ -73,7 +73,7 @@ BucketAdd($strings[
   salubrious, healthful, healthy, excellent, sagacious, wise, discerning,
 ]);
 
-BucketSet("badjective"); // super not apologizing
+BucketSet("sadjective"); // super not apologizing
 BucketAdd($strings[
   mean, angry, dangerous, scary, sad, lame, boring, terrible, atrocious, awful, trashtacular, ugly,
   gross, pathetic, DERANGED, psychotic, cursed, lonely, pitiful, mad, disgusting, repulsive,
@@ -103,7 +103,7 @@ BucketAdd($strings[
 ]);
 foreach i,adj in buckets["gladjective"]
   BucketAdd(adj);
-foreach i,adj in buckets["badjective"]
+foreach i,adj in buckets["sadjective"]
   BucketAdd(adj);
 // in rare cases, this will go crazy. intended.
 for i from 1 to 5
@@ -180,12 +180,12 @@ BucketAdd($strings[
   blessed, bestowed, gifted, improved, adventured, granted, protected,
 ]);
 
-BucketSet("badverb");
+BucketSet("sadverb");
 BucketAdd($strings[
   kill, hurt, eat, destroy, splatter, crush, maim, torture, wound, doom,
 ]);
 
-BucketSet("badverbed");
+BucketSet("sadverbed");
 BucketAdd($strings[
   killed, hurt, ate, destroyed, splattered, crushed, maimed, tortured, wounded, doomed,
 ]);
@@ -222,20 +222,20 @@ BucketAdd($strings[c, C, k, K, x, X]);
 
 BucketSet("messages");
 BucketAdd("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
-  "#{character1} was #{badverbed1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
-  "#{number} #{timeunit} or you will be #{badverbed1} by #{adjective1} #{character1}#{!} " +
-  "#{apology} for danger but I would be #{badverbed1} by #{adjective1} #{character1} if I didn't " +
+  "#{character1} was #{sadverbed1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
+  "#{number} #{timeunit} or you will be #{sadverbed1} by #{adjective1} #{character1}#{!} " +
+  "#{apology} for danger but I would be #{sadverbed1} by #{adjective1} #{character1} if I didn't " +
   "send this to someone, you understand right#{?}");
 BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message within #{number1} " +
   "#{timeunit1}, the #{gladjective} #{gladjective} #{character} will #{gladverb} you with " +
   "#{gladjective} times for like, the rest of your #{gladjective} life#{?}#{!} But if you don't " +
-  "forward it within #{number1} #{timeunit1}, the #{badjective} #{badjective} #{character} will " +
-  "#{badverb} you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
+  "forward it within #{number1} #{timeunit1}, the #{sadjective} #{sadjective} #{character} will " +
+  "#{sadverb} you with #{sadjective} times for the entire rest of your whole  #{sadjective} life " +
   "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
 BucketAdd("Born #{number} #{timeunit} too soon to explore #{place1}, born #{number} #{timeunit} " +
   "too late to explore #{place2}, born just in time to explore #{place3}#{!} #{exclamation}#{!} " +
   "#{place1} is so #{gladjective}, and #{place2} is so #{gladjective}, but #{place3} is totally " +
-  "#{badjective} and #{badjective}#{!} I wish I could have explored #{place1} or #{place2} instead#{!}");
+  "#{sadjective} and #{sadjective}#{!} I wish I could have explored #{place1} or #{place2} instead#{!}");
 
 string swapletter = "";
 
