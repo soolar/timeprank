@@ -92,6 +92,12 @@ BucketAdd("goddess of #{goodthing}");
 BucketAdd("god of #{badthing}");
 BucketAdd("goddess of #{badthing}");
 
+BucketSet("goodthing");
+BucketAdd($strings[
+  joy, memes, happiness, bravery, family, wealth, tranquility, life, blessings, luck, comfort,
+  synergy, good things, fortune, bravery, pleasure, accomplishment, all things that are good,
+]);
+
 BucketSet("badthing");
 BucketAdd($strings[
   DANGER, fear, terror, sorrow, plague, disease, poverty, anger, violence, death, curses, tears,
