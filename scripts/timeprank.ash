@@ -203,6 +203,11 @@ BucketAdd($strings[
   semi-rares, ascensions, moments, seasons, milliseconds, rollovers, weeks, fortnights,
 ]);
 
+BucketSet("place");
+// some of these will make no sense, but that's totally fine!
+foreach loc in $locations[]
+  BucketAdd(loc.to_string());
+
 BucketSet("apology");
 BucketAdd($strings[
   sorry, sry, my apologies, my sincerest condolences, I beg your forgiveness, I apologize,
@@ -227,6 +232,10 @@ BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message wit
   "forward it within #{number1} #{timeunit1}, the #{badjective} #{badjective} #{character} will " +
   "#{badverb} you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
   "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
+BucketAdd("Born #{number} #{timeunit} too soon to explore #{place1}, born #{number} #{timeunit} " +
+  "too late to explore #{place2}, born just in time to explore #{place3}#{!} #{exclamation}#{!} " +
+  "#{place1} is so #{gladjective}, and #{place2} is so #{gladjective}, but #{place3} is totally " +
+  "#{badjective} and #{badjective}#{!} I wish I could have explored #{place1} or #{place2} instead#{!}");
 
 string swapletter = "";
 
@@ -344,12 +353,12 @@ string ParseBuckets(string s)
 
 string ShittyChainMail()
 {
-  return mAKSpeldBaD(ParseBuckets(BucketGet("messages")));
+  return ParseBuckets(BucketGet("messages"));
 }
 
 void TimePrank(string playerName)
 {
-  string msg = ShittyChainMail();
+  string msg = mAKSpeldBaD(ShittyChainMail());
   print(msg);
   if(playerName != "?")
     cli_execute("timespinner prank " + playerName + " msg=" + msg);
