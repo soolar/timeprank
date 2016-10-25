@@ -1,3 +1,6 @@
+script "Procedural Time Prank Generator";
+notify "soolar the second";
+since r17283;
 
 string [string] [int] buckets;
 string currBucket;
