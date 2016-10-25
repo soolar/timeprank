@@ -15,29 +15,23 @@ void BucketAdd(string word)
   buckets[currBucket][buckets[currBucket].count()] = word;
 }
 
+void BucketAdd(boolean [string] words)
+{
+  foreach word in words
+    BucketAdd(word);
+}
+
 string BucketGet(string bucketName)
 {
   return buckets[bucketName][random(buckets[bucketName].count())];
 }
 
 BucketSet("exclamation");
-BucketAdd("OMG");
-BucketAdd("WOW");
-BucketAdd("AMAZING");
-BucketAdd("WHAT THE HECK");
-BucketAdd("OM GOD");
-BucketAdd("OH MY GOSH");
-BucketAdd("I CAN'T BELIEVE IT");
-BucketAdd("HOLY COW");
-BucketAdd("WHAT ON EARTH");
-BucketAdd("WHOA");
-BucketAdd("DANG DUDE");
-BucketAdd("GOLLY GEE WILLICKERS");
-BucketAdd("GOODNESS GRACIOUS");
-BucketAdd("JEEZO FLIP");
-BucketAdd("WHAT IN TARNATION");
-BucketAdd("GOSH DANG");
-BucketAdd("OH NO");
+BucketAdd($strings[
+  OMG, WOW, AMAZING, WHAT THE HECK, OM GOD, OH MY GOSH, I CAN'T BELIEVE IT, HOLY COW, WHAT ON EARTH,
+  WHOA, DANG DUDE, GOLLY GEE WILLICKERS, GOODNESS GRACIOUS, JEEZO FLIP, WHAT IN TARNATION,
+  GOSH DANG, OH NO,
+]);
 
 BucketSet("!");
 BucketAdd("!!!!11!");
@@ -58,146 +52,106 @@ BucketAdd("?/");
 BucketAdd("/");
 BucketAdd("?!!/1?!");
 
-BucketSet("adjective");
-BucketAdd("DERANGED");
-BucketAdd("little");
-BucketAdd("old");
-BucketAdd("young");
-BucketAdd("sad");
-BucketAdd("angry");
-BucketAdd("happy");
-BucketAdd("generous");
-BucketAdd("dank");
-BucketAdd("scared");
-BucketAdd("lonely");
-BucketAdd("pitiful");
-BucketAdd("pathetic");
-BucketAdd("awesome");
-BucketAdd("mad");
-BucketAdd("kawaii");
-BucketAdd("sugoi");
-BucketAdd("lame");
-BucketAdd("disgusting");
-BucketAdd("repulsive");
-BucketAdd("triggered");
-// in very rare cases, this will go crazy. intended.
-BucketAdd("#{adjective} #{adjective}");
-BucketAdd("#{adjective} #{adjective}");
-BucketAdd("#{adjective} #{adjective}");
-BucketAdd("#{adjective} #{adjective}");
-BucketAdd("#{adjective} #{adjective}");
 
 BucketSet("gladjective"); // I'm not sorry
-BucketAdd("happy");
-BucketAdd("hilarious");
-BucketAdd("amazing");
-BucketAdd("splendiforous"); // is that how you spell that? eh, whatever
-BucketAdd("splendid");
-BucketAdd("totally radical");
-BucketAdd("sicknasty radicool off the handle"); // NOT. SORRY.
-BucketAdd("gladiforous"); // also not sure that that's spelled right, not that it's a real word
-BucketAdd("fantastic");
-BucketAdd("fantabulous");
+BucketAdd($strings[
+  happy, hilarious, amazing, splendiforous, splendid, totally radical, gladiforous, fantastic,
+  sicknasty radicool off the handle, fantabulous, generous, dank, awesome, kawaii, sugoi,
+]);
 
 BucketSet("badjective"); // super not apologizing
-BucketAdd("mean");
-BucketAdd("angry");
-BucketAdd("dangerous");
-BucketAdd("scary");
-BucketAdd("sad");
-BucketAdd("lame");
-BucketAdd("boring");
-BucketAdd("terrible");
-BucketAdd("atrocious");
-BucketAdd("awful");
-BucketAdd("trashtacular");
-BucketAdd("ugly");
-BucketAdd("gross");
-BucketAdd("pathetic");
+BucketAdd($strings[
+  mean, angry, dangerous, scary, sad, lame, boring, terrible, atrocious, awful, trashtacular, ugly,
+  gross, pathetic, DERANGED, psychotic, cursed, lonely, pitiful, mad, disgusting, repulsive,
+  triggered,
+]);
+
+BucketSet("adjective");
+BucketAdd($strings[
+  little, old, young, scared,
+]);
+foreach i,adj in buckets["gladjective"]
+  BucketAdd(adj);
+foreach i,adj in buckets["badjective"]
+  BucketAdd(adj);
+// in rare cases, this will go crazy. intended.
+for i from 1 to 5
+  BucketAdd("#{adjective} #{adjective}");
 
 BucketSet("character");
-BucketAdd("girl");
-BucketAdd("boy");
-BucketAdd("lady");
-BucketAdd("cat");
-BucketAdd("hobo");
-BucketAdd("dood");
-BucketAdd("adventurer");
-BucketAdd("CHARACTER");
-BucketAdd("man");
-BucketAdd("convict");
-BucketAdd("dog");
-BucketAdd("doggo");
-BucketAdd("pupper");
-BucketAdd("person");
-BucketAdd("dragon");
-BucketAdd("meme");
-BucketAdd("memer");
-BucketAdd("lad");
+BucketAdd($strings[
+  girl, boy, lady, cat, hobo, dood, adventurer, CHARACTER, man, convict, dog, doggo, puppy, pupper,
+  person, dragon, meme, memer, lad, spider, skeleton, weaboo, Jick, Riff, Hotstuff, CDMoyer, bird,
+  elephant, capybara, mouse, rat, doctor, nurse, surgeon, bum, veterinarian, kitty, kitten,
+  redditor, anon, website, pixie, fairy, chump, gamer, lawyer, banker, baker, tree, boss, manager,
+  bureaucrat, PIC, VIP, rockstar, musician, artist, programmer, hero, champion, penguin mafioso,
+  gnome, bugbear, knob goblin, hippy, frat orc,
+]);
+BucketAdd("god of #{goodthing}");
+BucketAdd("goddess of #{goodthing}");
+BucketAdd("god of #{badthing}");
+BucketAdd("goddess of #{badthing}");
 
 BucketSet("badthing");
-BucketAdd("DANGER");
-BucketAdd("scary");
-BucketAdd("frighten");
-BucketAdd("TERROR");
-BucketAdd("hurtly");
+BucketAdd($strings[
+  DANGER, fear, terror, sorrow, plague, disease, poverty, anger, violence, death, curses, tears,
+  hurtly, downward spirals, horror, sadness, madladdity, pain, rage, dying, bad things, misfortune,
+]);
 
-BucketSet("badstuff");
-BucketAdd("kill");
-BucketAdd("die");
-BucketAdd("hurt");
-BucketAdd("ate");
-BucketAdd("splattered");
-BucketAdd("kill with #{badthing}");
+BucketSet("gladverb"); // I understand that this is poorly punned, these are not adverbs
+BucketAdd($strings[
+  bless, bestow, gift, improve,
+]);
+
+BucketSet("gladverbed");
+BucketAdd($strings[
+  blessed, bestowed, gifted, improved,
+]);
+
+BucketSet("badverb");
+BucketAdd($strings[
+  kill, hurt, eat, destroy, splatter,
+]);
+
+BucketSet("badverbed");
+BucketAdd($strings[
+  killed, hurt, ate, destroyed, splattered,
+]);
 
 BucketSet("number");
-BucketAdd("11");
-BucketAdd("37");
-BucketAdd("69");
+BucketAdd($strings[
+  11, 37, 42, 69, 1337, 2112, 31337,
+]);
 
 BucketSet("timeunit");
-BucketAdd("second");
-BucketAdd("secs");
-BucketAdd("minutes");
-BucketAdd("mins");
+BucketAdd($strings[
+  seconds, secs, minutes, mins, hours, days, months, years, decades, nanoseconds, microseconds,
+  picoseconds, light-miles, light-feet, shakes, jiffies, microfortnights, dog years, Friedmans,
+  microcenturies, nanocenturies, tatums,
+]);
 
 BucketSet("apology");
-BucketAdd("sorry");
-BucketAdd("sry");
-BucketAdd("my apologies");
+BucketAdd($strings[
+  sorry, sry, my apologies, my sincerest condolences, I beg your forgiveness,
+]);
 
 BucketSet("vowel");
-BucketAdd("a");
-BucketAdd("A");
-BucketAdd("e");
-BucketAdd("E");
-BucketAdd("i");
-BucketAdd("I");
-BucketAdd("o");
-BucketAdd("O");
-BucketAdd("u");
-BucketAdd("U");
-// no y because I'm letterist
+BucketAdd($strings[a, A, e, E, i, I, o, O, u, U]); // no y because I'm letterist
 
 BucketSet("ckx");
-BucketAdd("c");
-BucketAdd("C");
-BucketAdd("k");
-BucketAdd("K");
-BucketAdd("x");
-BucketAdd("X");
+BucketAdd($strings[c, C, k, K, x, X]);
 
 BucketSet("messages");
 BucketAdd("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
-  "#{character1} was #{badstuff1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
-  "#{number} #{timeunit} or you will be #{badstuff1} by #{adjective1} #{character1}#{!} " +
-  "#{apology} for danger but I would be #{badstuff1} by #{adjective1} #{character1} if I didn't " +
-  "send this to someone you understand right#{?}");
+  "#{character1} was #{badverbed1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
+  "#{number} #{timeunit} or you will be #{badverbed1} by #{adjective1} #{character1}#{!} " +
+  "#{apology} for danger but I would be #{badverbed1} by #{adjective1} #{character1} if I didn't " +
+  "send this to someone, you understand right#{?}");
 BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message within #{number1} " +
-  "#{timeunit1}, the #{gladjective} #{gladjective} #{character} will bless you with " +
+  "#{timeunit1}, the #{gladjective} #{gladjective} #{character} will #{gladverb} you with " +
   "#{gladjective} times for like, the rest of your #{gladjective} life#{?}#{!} But if you don't " +
   "forward it within #{number1} #{timeunit1}, the #{badjective} #{badjective} #{character} will " +
-  "curse you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
+  "#{badverb} you with #{badjective} times for the entire rest of your whole  #{badjective} life " +
   "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
 
 string swapletter = "";
