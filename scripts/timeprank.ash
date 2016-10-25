@@ -299,17 +299,12 @@ void TimePrank(string playerName)
 {
   string msg = ShittyChainMail();
   print(msg);
-  if(playerName != "")
+  if(playerName != "?")
     cli_execute("timespinner prank " + playerName + " msg=" + msg);
 }
 
 void main(string playerName)
 {
   TimePrank(playerName);
-}
-
-void main()
-{
-  TimePrank("");
 }
 
