@@ -235,6 +235,18 @@ void adCdhRatcer(buffer b, string c, boolean protect)
         case "c": case "k": case "x":
           c = BucketGet("ckx");
           break;
+        case "s": // LISP IT
+          if(c == "s")
+          {
+            adCdhRatcer(b, "t", protect);
+            adCdhRatcer(b, "h", protect);
+          }
+          else
+          {
+            adCdhRatcer(b, "T", protect);
+            adCdhRatcer(b, "H", protect);
+          }
+          return;
       }
     }
 
