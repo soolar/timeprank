@@ -23,7 +23,18 @@ void BucketAdd(boolean [string] words)
 
 string BucketGet(string bucketName)
 {
-  return buckets[bucketName][random(buckets[bucketName].count())];
+  int entries = buckets[bucketName].count();
+  if(entries == 0)
+  {
+    print("Empty bucket #{" + bucketName + "}");
+    return "EMPTY BUCKET " + bucketName;
+  }
+  if(entries == 1)
+  {
+    print("Singular bucket #{" + bucketName + "}");
+    return buckets[bucketName][0];
+  }
+  return buckets[bucketName][random(entries)];
 }
 
 BucketSet("exclamation");
