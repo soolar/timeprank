@@ -133,26 +133,15 @@ for i from 1 to 5
 BucketSet("character");
 BucketAdd($strings[
   girl, boy, lady, cat, hobo, dood, adventurer, CHARACTER, man, convict, dog, doggo, puppy, pupper,
-  person, dragon, meme, memer, lad, spider, skeleton, weaboo, Jick, Riff, Hotstuff, CDMoyer, bird,
+  person, dragon, meme, memer, lad, skeleton, weaboo, Jick, Riff, Hotstuff, CDMoyer, bird,
   elephant, capybara, mouse, rat, doctor, nurse, surgeon, bum, veterinarian, kitty, kitten,
   redditor, anon, website, pixie, fairy, chump, gamer, lawyer, banker, baker, tree, boss, manager,
-  bureaucrat, PIC, VIP, rockstar, musician, artist, programmer, hero, champion, penguin mafioso,
-  gnome, bugbear, knob goblin, hippy, frat orc, giant, neckbeard, neckbeard giant, witchess knight,
-  knob goblin embezzler, rain king, naughty sorceress, Ed the UNDYING, sea monkee, mer-kin, mother,
-  father, brother, sister, baby, child, Crimbuddha, Rudolphus of Crimborg, Uncle Crimbo, crimbot,
-  warbear, hand turkey, mayfly swarm, lovebug, artistic goth kid, Intergnat, Boris, Jarlsberg,
-  Sneaky Pete, your mom, Puck Man, Ms. Puck Man, Azazel, Swagger Jack, vampire, werewolf, ghost,
-  zombie, ghoul, lich, clannie, diva, fish, duck, goose, slime, source agent, Monster Manuel,
-  Lord Spookyraven, Lady Spookyraven, Izzy the Lizard, Duncan Disorderly, Stradella, Nash Crosby, 
-  Olaf the Janitor, Grignr, Terri, Asiago, Edam, Blaine, Batfellow, The Jokester, hobo monkey,
-  monkey, golden monkey, fist turkey, grim brother, grimstone golem, galloping grill, grim brother,
-  machine elf, rockin' robin, pottery barn owl, owl, BRICKO chick, pair of stomping boots,
-  steam-powered cheerleader, adventurous spelunker, rock lobster, reanimated reanimator, mosquito,
-  jumpsuited hound dog, nanorhino, slimeling, nosy nose, gelatinous cubeling, El Vibrato megadrone,
-  feral kobold, warbear drone, Xiblaxian holo-companion, exotic parrot, purse rat, mayonnaise wasp,
-  apathetic lizardman, grouper groupie, reassembled blackbird, robogoose, ghost pickle on a stick,
-  MagiMechTech MicroMechaMech, midget clownfish, lil' barrel mimic, smiling rat, cocoabo, tomb rat,
-  star starfish, twitching space critter, animated macaroni duck, mutant fire ant, leprechaun,
+  bureaucrat, PIC, VIP, rockstar, musician, artist, programmer, hero, champion,
+  sea monkee, mer-kin, mother, father, brother, sister, baby, child, Crimbuddha, Uncle Crimbo,
+  Rudolphus of Crimborg, crimbot, monkey, owl, mayfly swarm, lovebug, Boris, Jarlsberg,
+  Sneaky Pete, your mom, Azazel, Swagger Jack, clannie, diva, fish, duck, goose, Monster Manuel,
+  Lady Spookyraven, Izzy the Lizard, Duncan Disorderly, Stradella, Nash Crosby,
+  Olaf the Janitor, Grignr, Terri, Asiago, Edam, Blaine, Batfellow,
 ]);
 BucketAdd("Lefty, the Trainer");
 BucketAdd("Shifty, the Thief Chief");
@@ -161,13 +150,18 @@ BucketAdd("Gunther, Lord of the Smackdown");
 BucketAdd("Brie, the Trainer");
 BucketAdd("Gorgonzola, the Chief Chef");
 BucketAdd("Rodoric, the Staffcrafter");
-BucketAdd("Shub-Jigguwatt, Elder God of Violence");
-BucketAdd("Yog-Urt, Elder Goddess of Hatred");
 BucketAdd("Gaia'ajh-dsli Ak'lwej");
 BucketAdd("god of #{goodthing}");
 BucketAdd("goddess of #{goodthing}");
 BucketAdd("god of #{badthing}");
 BucketAdd("goddess of #{badthing}");
+// Let's just go ahead and add every familiar and monster in the game, why not
+foreach m in $monsters[]
+  BucketAdd(m.to_string());
+foreach f in $familiars[]
+  BucketAdd(f.to_string());
+foreach t in $thralls[]
+  BucketAdd(t.to_string());
 
 BucketSet("goodthing");
 BucketAdd($strings[
