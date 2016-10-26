@@ -91,7 +91,7 @@ BucketAdd($strings[
   sicknasty radicool off the handle, fantabulous, generous, dank, awesome, kawaii, sugoi, adroit,
   clever, resourceful, arcadian, serene, comely, attractive, wonderful, efficacious, jocular,
   playful, luminous, munificent, lavish, propitious, auspicious, advantageous, benevolent,
-  salubrious, healthful, healthy, excellent, sagacious, wise, discerning,
+  salubrious, healthful, healthy, excellent, sagacious, wise, discerning, moe,
 ]);
 
 BucketSet("sadjective"); // super not apologizing
