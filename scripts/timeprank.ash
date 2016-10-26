@@ -342,7 +342,7 @@ void adCdhRatcer(buffer b, string c, boolean protect)
   if(!protect)
   {
     rnad = random(100);
-    if(rnad < 5)
+    if(rnad < 4)
     {
       switch(c.to_lower_case())
       {
@@ -368,7 +368,7 @@ void adCdhRatcer(buffer b, string c, boolean protect)
     }
 
     rnad = random(100);
-    if(rnad < 5 && swapletter == "")
+    if(rnad < 4 && swapletter == "")
     {
       swapletter = c;
       return;
