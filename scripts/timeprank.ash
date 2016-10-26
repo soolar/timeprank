@@ -309,7 +309,7 @@ BucketAdd("It's #{adjective}, this feeling in my #{bodypart}. It's almost as tho
   "fluttering down from #{place}. The #{adjective} color of this #{timeunit} fills me with " +
   "#{thing}. From the moment we #{verb}, the melody of my #{bodypart} has been ringing with " +
   "#{goodthing}. It can't be #{verbed1}, it won't be #{verbed1} -- #{exclamation}#{?} " +
-  'Ring out#{!} Shall I name this #{sadjective1} #{badthing1} "#{thing1} #{thing2}"#{?} ' +
+  'Ring out#{!} Shall I name this #{sadjective1} #{badthing1} "#{thing1} Halation"#{?} ' +
   "I can't wait for our #{thing3} to #{verb1}; it's frustrating, but it's a pure-#{bodypart1}ed " +
   "#{goodthing1} called #{goodthing2}. Even in this #{adjective1} fever, I can't #{verb2}. " +
   "I'll accept the #{goodthing3} to #{verb3} in; it's about to #{verb4}#{!} Without a #{thing}, " +
@@ -320,7 +320,7 @@ BucketAdd("It's #{adjective}, this feeling in my #{bodypart}. It's almost as tho
   "It's #{sadjective} to never do more than dream of it, I want you to be mine! " +
   "I don't want to be #{verbed} by your #{adjective} #{bodypart}. Accept all my #{thing} for you " +
   "as it is, #{exclamation}#{!} Ring out#{!} Shall I name this #{sadjective1} #{badthing1} " +
-  '"#{thing1} #{thing2}"#{?} ' + "I can't wait for our #{thing3} to #{verb1}; it's frustrating, " +
+  '"#{thing1} Halation"#{?} ' + "I can't wait for our #{thing3} to #{verb1}; it's frustrating, " +
   "but it's a pure-#{bodypart1}ed #{goodthing1} called #{goodthing2}. Even in this #{adjective1} " +
   "fever, I can't #{verb2}. I'll accept the #{goodthing3} to #{verb3} in; it's about to #{verb4}#{!}");
 
