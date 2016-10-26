@@ -21,38 +21,65 @@ void BucketAdd(boolean [string] words)
     BucketAdd(word);
 }
 
-string BucketGet(string bucketName)
+string BucketGet(string bucketNameProvided)
 {
+  string bucketName = bucketNameProvided.to_lower_case();
   int entries = buckets[bucketName].count();
   if(entries == 0)
   {
-    print("Empty bucket #{" + bucketName + "}");
-    return "EMPTY BUCKET " + bucketName;
+    print("Empty bucket #{" + bucketNameProvided + "}");
+    return "<[EMPTY BUCKET " + bucketNameProvided + "]>";
   }
+
+  string res = buckets[bucketName][0];
   if(entries == 1)
-  {
     print("Singular bucket #{" + bucketName + "}");
-    return buckets[bucketName][0];
+  else
+    res = buckets[bucketName][random(entries)];
+
+  if(bucketName != bucketNameProvided)
+  {
+    // Only supported cases atm are capitalize the whole thing to caps lock the entire replacement
+    // and capitalizing part of it to capitalize the first letter
+    if(bucketName.to_upper_case() == bucketNameProvided)
+      res = res.to_upper_case();
+    else
+      res = res.substring(0,1).to_upper_case() + res.substring(1);
   }
-  return buckets[bucketName][random(entries)];
+
+  return res;
 }
 
-BucketSet("exclamation");
+BucketSet("expletive");
 BucketAdd($strings[
-  OMG, WOW, AMAZING, WHAT THE HECK, OM GOD, OH MY GOSH, I CAN'T BELIEVE IT, HOLY COW, WHAT ON EARTH,
-  WHOA, DANG DUDE, GOLLY GEE WILLICKERS, GOODNESS GRACIOUS, JEEZO FLIP, WHAT IN TARNATION,
-  GOSH DANG, OH NO, HEY, I AM COMPLETELY FLABBERGASTED, OMFG, LMAO, LOL, WTF, NO WAY, CHECK IT OUT,
-  OH MY GOODNESS GRACIOUS GOLLY GEE WILLICKERS, WHAT THE HECKING HECK, HOO BOY, WHAT THE HEY,
-  NO WAY I DON'T BELIEVE IT AT ALL, THIS IS INCREDIBLE, NANI, <3~MOE~MOE~KYUN~<3, TODOKETE,
-  CAN YOU BELIEVE THIS GUY, NOPE NOPE NOPE NOPE NOPE, RADICAL, THAT'S ENOUGH INTERNET FOR TODAY,
-  IT'S THE NUTSHACK, GOSH, JEEZ, JEEZ LOUISE, JESUS TAP-DANCING CHRIST, GREAT GOOGLY MOOGLY,
-  HOROSHO, SWEET MERCIFUL CRAP, FOR CRYIN' OUT LOUD, SWEET SASSY MOLASSY, NERTS, JIMINY CRICKET,
-  OH MY HECK, ZARK OFF, MAMMA PAJAMA, HOLY GUACAMOLE, MOM'S SPAGHETTI, ISHYGDDT, CRIMINALITIES,
-  OH BOY, DOODLEBUGS, WELL BUTTER MY BUNS, HOT CROSS BUNS, HOT DIGGITY DOG, DAGNABBIT,
-  WELL TIE ME DOWN AND SPANK MY BOTTOM WITH A WET FISH, JUMPIN' CATFISH, CHEESE AND RICE,
-  WELL SLAP ME SILLY AND CALL ME SUSAN, SWEET ZOMBIE JESUS, BY THE RINGS OF SATURN, YE GODS,
+  frig, frick, heck, hey, shoot, dang, crap, hecking heck, fricking frick, hecking frick,
+  fricking heck, shazbot, iced tea, gosh, butt, booger, crabapples, dickens, shootdarn,
+  frick frack, flip flap, wow, guacamole, wow, nutshack, todokete, jeez, nerts, mom's spaghetti,
+  doodlebugs, criminalities, cheese and rice,
 ]);
-BucketAdd("IS THIS LORE#{?}"); // asking the important questions
+
+BucketSet("exclamation");
+BucketAdd("om #{expletive}");
+BucketAdd("oh my #{expletive}");
+BucketAdd("holy #{expletive}");
+BucketAdd("what in #{place}");
+BucketAdd("what in #{character}'s name");
+BucketAdd("what the #{expletive}");
+BucketAdd("#{expletive} #{expletive}");
+BucketAdd("sweet zombie #{character}");
+BucketAdd("well slap me silly and call me #{character}");
+BucketAdd($strings[
+  omg, amazing, I can't believe it, what on earth, whoa, dang dude, golly gee willickers,
+  goodness gracious, jeezo flip, what in tarnation, oh no, hey, I am completely flabbergasted, omfg,
+  lmao, lol, wtf, no way, check it out, oh my goodness gracious golly gee willickers, hoo boy,
+  no way I don't believe it at all, this is incredible, nani, <3~moe~moe~kyun~<3,
+  can you believe this guy, nope nope nope nope nope, radical, that's enough internet for today,
+  it's the nutshack, jeez louise, jesus tap-dancing christ, great googly moogly, horosho,
+  sweet merciful crap, for cryin' out loud, sweet sassy molassy, Jiminy Cricket, zark off,
+  mamma pajama, ishygddt, oh boy, well butter my buns, hot cross buns, hot diggity dog, dagnabbit,
+  well tie me down and spank my bottom with a wet fish, jumpin' catfish, by the rings of Saturn,
+]);
+BucketAdd("is this lore#{?}"); // asking the important questions
 BucketAdd("Yay, Jick!"); // THE MOST IMPORTANT EXCLAMATION
 BucketAdd("Yay, Jick!"); // SO IMPORTANT, I ADDED IT TWICE
 BucketAdd("Yay, Jick!"); // HOLD ON, MAKE THAT THREE TIMES
@@ -290,12 +317,12 @@ BucketSet("ckx");
 BucketAdd($strings[c, C, k, K, x, X]);
 
 BucketSet("messages");
-BucketAdd("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
+BucketAdd("#{EXCLAMATION}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
   "#{character1} was #{sadverbed1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
   "#{number} #{timeunits} or you will be #{sadverbed1} by #{adjective1} #{character1}#{!} " +
   "#{apology} for danger but I would be #{sadverbed1} by #{adjective1} #{character1} if I didn't " +
   "send this to someone, you understand right#{?}");
-BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message within #{number1} " +
+BucketAdd("#{EXCLAMATION} #{EXCLAMATION}#{!}#{!} If you forward this message within #{number1} " +
   "#{timeunits1}, the #{gladjective} #{gladjective} #{character} will #{gladverb} you with " +
   "#{gladjective} times for like, the rest of your #{gladjective} life#{?}#{!} But if you don't " +
   "forward it within #{number1} #{timeunits1}, the #{sadjective} #{sadjective} #{character} will " +
@@ -308,8 +335,8 @@ BucketAdd("Born #{number} #{timeunits} too soon to explore #{place1}, born #{num
 BucketAdd("It's #{adjective}, this feeling in my #{bodypart}. It's almost as though it came " +
   "fluttering down from #{place}. The #{adjective} color of this #{timeunit} fills me with " +
   "#{thing}. From the moment we #{verb}, the melody of my #{bodypart} has been ringing with " +
-  "#{goodthing}. It can't be #{verbed1}, it won't be #{verbed1} -- #{exclamation}#{?} " +
-  'Ring out#{!} Shall I name this #{sadjective1} #{badthing1} "#{thing1} Halation"#{?} ' +
+  "#{goodthing}. It can't be #{verbed1}, it won't be #{verbed1} -- #{Exclamation}#{?} " +
+  'Ring out#{!} Shall I name this #{sadjective1} #{badthing1} "#{Thing1} Halation"#{?} ' +
   "I can't wait for our #{thing3} to #{verb1}; it's frustrating, but it's a pure-#{bodypart1}ed " +
   "#{goodthing1} called #{goodthing2}. Even in this #{adjective1} fever, I can't #{verb2}. " +
   "I'll accept the #{goodthing3} to #{verb3} in; it's about to #{verb4}#{!} Without a #{thing}, " +
@@ -320,7 +347,7 @@ BucketAdd("It's #{adjective}, this feeling in my #{bodypart}. It's almost as tho
   "It's #{sadjective} to never do more than dream of it, I want you to be mine! " +
   "I don't want to be #{verbed} by your #{adjective} #{bodypart}. Accept all my #{thing} for you " +
   "as it is, #{exclamation}#{!} Ring out#{!} Shall I name this #{sadjective1} #{badthing1} " +
-  '"#{thing1} Halation"#{?} ' + "I can't wait for our #{thing3} to #{verb1}; it's frustrating, " +
+  '"#{Thing1} Halation"#{?} ' + "I can't wait for our #{thing3} to #{verb1}; it's frustrating, " +
   "but it's a pure-#{bodypart1}ed #{goodthing1} called #{goodthing2}. Even in this #{adjective1} " +
   "fever, I can't #{verb2}. I'll accept the #{goodthing3} to #{verb3} in; it's about to #{verb4}#{!}");
 
