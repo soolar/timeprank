@@ -465,14 +465,14 @@ string ParseBuckets(string s)
     return s;
 }
 
-string ShittyChainMail()
+string GenerateMessage()
 {
   return ParseBuckets(BucketGet("messages"));
 }
 
 void TimePrank(string playerName)
 {
-  string msg = mAKSpeldBaD(ShittyChainMail());
+  string msg = mAKSpeldBaD(GenerateMessage());
   print(msg);
   if(playerName != "?")
     cli_execute("timespinner prank " + playerName + " msg=" + msg);
