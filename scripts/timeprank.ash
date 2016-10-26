@@ -252,6 +252,14 @@ BucketAdd($strings[
 
 BucketSet("timeunit");
 BucketAdd($strings[
+  second, sec, minute, min, hour, day, month, year, decade, nanosecond, microsecond, picosecond,
+  light-mile, light-foot, shake, jiffy, microfortnight, dog year, Friedman, microcentury,
+  nanocentury, tatum, adventure, turn, fight, combat, non-combat, semi-rare, ascension, moment,
+  season, millisecond, rollover, week, fornight,
+]);
+
+BucketSet("timeunits");
+BucketAdd($strings[
   seconds, secs, minutes, mins, hours, days, months, years, decades, nanoseconds, microseconds,
   picoseconds, light-miles, light-feet, shakes, jiffies, microfortnights, dog years, Friedmans,
   microcenturies, nanocenturies, tatums, adventures, turns, fights, combats, non-combats,
@@ -278,16 +286,16 @@ BucketAdd($strings[c, C, k, K, x, X]);
 BucketSet("messages");
 BucketAdd("#{exclamation}#{!} Once there was #{adjective1} #{character1} and then #{adjective1} " +
   "#{character1} was #{sadverbed1} by #{adjective2} #{character2}#{!} FWD this time prank within " +
-  "#{number} #{timeunit} or you will be #{sadverbed1} by #{adjective1} #{character1}#{!} " +
+  "#{number} #{timeunits} or you will be #{sadverbed1} by #{adjective1} #{character1}#{!} " +
   "#{apology} for danger but I would be #{sadverbed1} by #{adjective1} #{character1} if I didn't " +
   "send this to someone, you understand right#{?}");
 BucketAdd("#{exclamation} #{exclamation}#{!}#{!} If you forward this message within #{number1} " +
-  "#{timeunit1}, the #{gladjective} #{gladjective} #{character} will #{gladverb} you with " +
+  "#{timeunits1}, the #{gladjective} #{gladjective} #{character} will #{gladverb} you with " +
   "#{gladjective} times for like, the rest of your #{gladjective} life#{?}#{!} But if you don't " +
-  "forward it within #{number1} #{timeunit1}, the #{sadjective} #{sadjective} #{character} will " +
+  "forward it within #{number1} #{timeunits1}, the #{sadjective} #{sadjective} #{character} will " +
   "#{sadverb} you with #{sadjective} times for the entire rest of your whole  #{sadjective} life " +
   "instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}");
-BucketAdd("Born #{number} #{timeunit} too soon to explore #{place1}, born #{number} #{timeunit} " +
+BucketAdd("Born #{number} #{timeunits} too soon to explore #{place1}, born #{number} #{timeunits} " +
   "too late to explore #{place2}, born just in time to explore #{place3}#{!} #{exclamation}#{!} " +
   "#{place1} is so #{gladjective}, and #{place2} is so #{gladjective}, but #{place3} is totally " +
   "#{sadjective} and #{sadjective}#{!} I wish I could have explored #{place1} or #{place2} instead#{!}");
