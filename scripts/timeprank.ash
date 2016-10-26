@@ -470,9 +470,11 @@ string GenerateMessage()
   return ParseBuckets(BucketGet("messages"));
 }
 
-void TimePrank(string playerName)
+void TimePrank(string playerName, boolean misspell)
 {
-  string msg = mAKSpeldBaD(GenerateMessage());
+  string msg = GenerateMessage();
+  if(misspell)
+    msg = mAKSpeldBaD(msg);
   print(msg);
   if(playerName != "?")
     cli_execute("timespinner prank " + playerName + " msg=" + msg);
@@ -480,6 +482,6 @@ void TimePrank(string playerName)
 
 void main(string playerName)
 {
-  TimePrank(playerName);
+  TimePrank(playerName, true);
 }
 
