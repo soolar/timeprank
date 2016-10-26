@@ -214,6 +214,37 @@ BucketAdd($strings[
   killed, hurt, ate, destroyed, splattered, crushed, maimed, tortured, wounded, doomed,
 ]);
 
+BucketSet("verb");
+foreach i,s in buckets["gladverb"]
+  BucketAdd(s);
+foreach i,s in buckets["sadverb"]
+  BucketAdd(s);
+
+BucketSet("verbed");
+foreach i,s in buckets["gladverbed"]
+  BucketAdd(s);
+foreach i,s in buckets["sadverbed"]
+  BucketAdd(s);
+
+BucketSet("adverb"); // yes, this is for really reals adverbs
+BucketAdd($strings[
+  athletically, accidentally, afterwards, almost, always, angrily, annually, anxiously, awkwardly,
+  badly, blindly, boastfully, boldly, bravely, briefly, brightly, busily, calmly, carefully,
+  carelessly, cautiously, cheerfully, clearly, correctly, courageously, crossly, cruelly, daily,
+  defiantly, deliberately, doubtfully, easily, elegantly, enormously, enthusiastically, equally,
+  even, eventually, exactly, faithfully, far, fast, fatally, fiercely, fondly, foolishly,
+  fortunately, frantically, gently, gladly, gracefully, greedily, happily, hastily, honestly, hourly,
+  hungrily, innocently, inquisitively, irritably, joyously, justly, kindly, lazily, less, loosely,
+  loudly, madly, merrily, monthly, more, mortally, mysteriously, nearly, neatly, nervously, never,
+  noisily, not, obediently, obnoxiously, often, only, painfully, perfectly, politely, poorly,
+  powerfully, promptly, punctually, quickly, quietly, rapidly, rarely, really, recklessly, regularly,
+  reluctantly, repeatedly, rightfully, roughly, rudely, sadly, safely, seldom, selfishly, seriously,
+  shakily, sharply, shrilly, shyly, silently, sleepily, slowly, smoothly, softly, solemnly,
+  sometimes, soon, speedily, stealthily, sternly, successfully, suddenly, suspiciously, swiftly,
+  tenderly, tensely, thoughtfully, tightly, tomorrow, too, truthfully, unexpectedly, very,
+  victoriously, violently, vivaciously, warmly, weakly, wearily, well, wildly, yearly, yesterday,
+]);
+
 BucketSet("number");
 BucketAdd($strings[
   11, 37, 42, 69, 1337, 2112, 31337, 2, 5, a random multiple of 5, 3.1415926, a bajillion,
