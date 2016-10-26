@@ -277,6 +277,12 @@ BucketAdd($strings[
   I'm sorry, I hope you can forgive me, I'm not actually sorry,
 ]);
 
+BucketSet("bodypart");
+BucketAdd($strings[
+  ankle, arm, arse, bung, calf, ear, elbow, eye, face, foot, forehead, giblets, groin, head, kidney,
+  knee, leg, lower back, neck, nipple, shin, shoulder, skull, solar plexus, thigh, throat,
+]);
+
 BucketSet("vowel");
 BucketAdd($strings[a, A, e, E, i, I, o, O, u, U]); // no y because I'm letterist
 
