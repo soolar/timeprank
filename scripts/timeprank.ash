@@ -165,25 +165,34 @@ foreach t in $thralls[]
 
 BucketSet("goodthing");
 BucketAdd($strings[
-  joy, memes, happiness, bravery, family, wealth, tranquility, life, blessings, luck, comfort,
-  synergy, good things, fortune, bravery, pleasure, accomplishment, all things that are good,
-  barrels, alchohol, booze, rum, vodka, whiskey, rum, ninjas, pirates, robots, computers,
+  joy, meme, happiness, bravery, family, wealth, tranquility, life, blessing, luck, comfort,
+  synergy, good thing, fortune, bravery, pleasure, accomplishment, all things that are good,
+  barrel, alchohol, booze, rum, vodka, whiskey, ninjas, pirates, robot, computer,
   muscle, beefiness, fortitude, muscleboundness, strengthliness, strongness, mysticality,
   enchantedness, magicalness, mysteriousness, wizardliness, moxie, cheek, chutzpah, roguishness,
   sarcasm, smarm, pulchritude, chain lightning, lightning, magic, lightning magic, // I like lightning ok leave me alone
-  drunkenness, fullness, amazing rng, Spookloween, Spookloween names, Crimbo, optimality,
-  gold stars, silver moons, bronze buttons, leaderboard runs, karma, royal tea, smithsness,
-  turtles, pasta, sauce, accordions, dancing,
+  drunkenness, fullness, amazing rng, Spookloween, Spookloween name, Crimbo, optimality,
+  gold star, silver moon, bronze button, leaderboard run, karma, royal tea, smithsness,
+  turtle, pasta, sauce, accordions, dancing, snow, halation, determination, DETERMINATION,
 ]);
 
 BucketSet("badthing");
 BucketAdd($strings[
-  DANGER, fear, terror, sorrow, plague, disease, poverty, anger, violence, death, curses, tears,
-  hurtly, downward spirals, horror, sadness, madladdity, pain, rage, dying, bad things, misfortune,
-  overdrinking early on accident, misclicking, accidental adventures, wasted turns, terrible rng,
+  DANGER, fear, terror, sorrow, plague, disease, poverty, anger, violence, death, curse, tear,
+  hurtly, downward spiral, horror, sadness, madladdity, pain, rage, dying, bad thing, misfortune,
+  overdrinking early on accident, misclick, accidental adventure, wasted turn, terrible rng,
   only being able to use the Copperhead route, getting the same pirate insult ten times in a row,
-  black cat runs, regret, fury, seals,
+  black cat run, regret, fury, seal,
 ]);
+
+BucketSet("thing");
+foreach i,s in buckets["goodthing"]
+  BucketAdd(s);
+foreach i,s in buckets["badthing"]
+  BucketAdd(s);
+// Aside from all the goodthings and all the badthings, let's just go ahead and add every item
+foreach it in $items[]
+  BucketAdd(it.to_string());
 
 BucketSet("gladverb"); // I understand that this is poorly punned, these are not adverbs
 BucketAdd($strings[
