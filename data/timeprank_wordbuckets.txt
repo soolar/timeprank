@@ -1,0 +1,832 @@
+adjective	abnormal
+adjective	acceptable
+adjective	adamant
+adjective	adequate
+adjective	adroit	positive
+adjective	advantageous	positive
+adjective	adventurous
+adjective	amazing	positive
+adjective	angry	negative
+adjective	arcadian	positive
+adjective	artificial
+adjective	atrocious	negative
+adjective	attractive	positive
+adjective	auspicious	positive
+adjective	average
+adjective	awesome	positive
+adjective	awful	negative
+adjective	baleful	negative
+adjective	banal	negative
+adjective	bellicose	negative
+adjective	belligerent	negative
+adjective	benevolent	positive
+adjective	biting	negative
+adjective	bizarre
+adjective	blunt	negative
+adjective	boorish	negative
+adjective	boring	negative
+adjective	calamitous	negative
+adjective	caustic	negative
+adjective	clever	positive
+adjective	closemouthed
+adjective	cohesive
+adjective	comely	positive
+adjective	contemptuous
+adjective	contumacious
+adjective	corpulent	negative
+adjective	corrosive	negative
+adjective	corrupting	negative
+adjective	cranky	negative
+adjective	crappy	negative
+adjective	craptacular	negative
+adjective	crapulous	negative
+adjective	crude	negative
+adjective	cursed	negative
+adjective	dangerous	negative
+adjective	dank	positive
+adjective	deadly	negative
+adjective	decent
+adjective	deceptive
+adjective	dedicated
+adjective	defamatory	negative
+adjective	deranged	negative
+adjective	destructive	negative
+adjective	detestable	negative
+adjective	devastating	negative
+adjective	devoted
+adjective	didactic
+adjective	dilatory
+adjective	disastrous	negative
+adjective	discerning	positive
+adjective	disgusting	negative
+adjective	distinct
+adjective	dowdy	negative
+adjective	dull	negative
+adjective	eager
+adjective	efficacious	positive
+adjective	encious	negative
+adjective	endemic
+adjective	equanimous
+adjective	excellent	positive
+adjective	excitable
+adjective	execrable	negative
+adjective	fantabulous	positive
+adjective	fantastic	positive
+adjective	fastidious
+adjective	feckless	negative
+adjective	fecund
+adjective	foreboding	negative
+adjective	friable
+adjective	frugal
+adjective	fulsome
+adjective	funny (but not the good kind)	negative
+adjective	garrulous
+adjective	generous	positive
+adjective	gladiforous	positive
+adjective	glib
+adjective	gross	negative
+adjective	guileless
+adjective	gustatory
+adjective	happy	positive
+adjective	harmful	negative
+adjective	healthful	positive
+adjective	healthy	positive
+adjective	hilarious	positive
+adjective	hilarious (in a bad way)	negative
+adjective	ill-mannered	negative
+adjective	impish
+adjective	impolite	negative
+adjective	impudent
+adjective	inactive
+adjective	incisive	negative
+adjective	inescapable
+adjective	injurious	negative
+adjective	insatiable
+adjective	insensitive	negative
+adjective	insidious
+adjective	insolent
+adjective	invidious	negative
+adjective	irresponsible	negative
+adjective	irritating	negative
+adjective	jejune	negative
+adjective	jocular	positive
+adjective	judicious
+adjective	kawaii	positive
+adjective	lachrymose	negative
+adjective	lame	negative
+adjective	laughable	negative
+adjective	lavish	positive
+adjective	lazy
+adjective	limpid
+adjective	little
+adjective	lonely	negative
+adjective	loquacious
+adjective	luminous	positive
+adjective	mad	negative
+adjective	mean	negative
+adjective	mendacious
+adjective	meticulous
+adjective	moderately attractive
+adjective	moe	positive
+adjective	mordant	negative
+adjective	munificent	positive
+adjective	naive
+adjective	nefarious	negative
+adjective	nervous
+adjective	normal
+adjective	noxious	negative
+adjective	obese	negative
+adjective	obnoxious	negative
+adjective	obtuse	negative
+adjective	old
+adjective	ordinary
+adjective	parsimonious
+adjective	passable
+adjective	pathetic	negative
+adjective	pernicious	negative
+adjective	persistent
+adjective	pervasive
+adjective	petulant	negative
+adjective	picky
+adjective	pitiable	negative
+adjective	pitiful	negative
+adjective	plain
+adjective	playful	positive
+adjective	pointless	negative
+adjective	pompous	negative
+adjective	powerless	negative
+adjective	pretentious
+adjective	propitious	positive
+adjective	psychotic	negative
+adjective	puckish
+adjective	puerile	negative
+adjective	pungent	negative
+adjective	quarrelsome	negative
+adjective	querulous	negative
+adjective	quiescent
+adjective	quiet
+adjective	rank	negative
+adjective	ravenous
+adjective	reasonably intelligent
+adjective	rebarbative	negative
+adjective	repellent	negative
+adjective	repulsive	negative
+adjective	resentful	negative
+adjective	resourceful	positive
+adjective	reticent
+adjective	rhadamanthine	negative
+adjective	risible	negative
+adjective	rude	negative
+adjective	sad	negative
+adjective	sagacious	positive
+adjective	salubrious	positive
+adjective	sarcastic	negative
+adjective	scared
+adjective	scary	negative
+adjective	sclerotic
+adjective	sensitive
+adjective	serene	positive
+adjective	serpentine
+adjective	shabby	negative
+adjective	sharp
+adjective	shoddy	negative
+adjective	sicknasty radicool off the handle	positive
+adjective	simple
+adjective	sleazy	negative
+adjective	spasmodic
+adjective	splendid	positive
+adjective	splendiforous	positive
+adjective	spooky	negative
+adjective	stinky	negative
+adjective	strange
+adjective	stupid	negative
+adjective	subtle
+adjective	sugoi	positive
+adjective	swollen	negative
+adjective	taciturn
+adjective	talkative
+adjective	tearful	negative
+adjective	tenacious
+adjective	terrible	negative
+adjective	timid
+adjective	totally radical	positive
+adjective	trashtacular	negative
+adjective	trembling
+adjective	tremulous
+adjective	trenchant
+adjective	triggered	negative
+adjective	turgid	negative
+adjective	ubiquitous
+adjective	ugly	negative
+adjective	untroublesome
+adjective	uxorious
+adjective	verdant
+adjective	voluble
+adjective	voracious
+adjective	weak	negative
+adjective	weird
+adjective	wheedling
+adjective	whiny	negative
+adjective	wicked	negative
+adjective	wise	positive
+adjective	withering	negative
+adjective	wonderful	positive
+adjective	wordy
+adjective	wretched	negative
+adjective	young
+adjective	zealous
+adjective	#{adjective} #{adjective}	weight=5
+
+adverb	athletically	manner
+adverb	accidentally	manner
+adverb	afterwards	time
+adverb	almost	degree
+adverb	always	time
+adverb	angrily	manner
+adverb	annually	time
+adverb	anxiously	manner
+adverb	awkwardly	manner
+adverb	badly	manner
+adverb	blindly	manner
+adverb	boastfully	manner
+adverb	boldly	manner
+adverb	bravely	manner
+adverb	briefly	manner
+adverb	brightly	manner
+adverb	busily	manner
+adverb	calmly	manner
+adverb	carefully	manner
+adverb	carelessly	manner
+adverb	cautiously	manner
+adverb	cheerfully	manner
+adverb	clearly	manner
+adverb	correctly	manner
+adverb	courageously	manner
+adverb	crossly	manner
+adverb	cruelly	manner
+adverb	daily	time
+adverb	defiantly	manner
+adverb	deliberately	manner
+adverb	doubtfully	manner
+adverb	easily	manner
+adverb	elegantly	manner
+adverb	enormously	degree
+adverb	enthusiastically	manner
+adverb	equally	degree
+adverb	eventually	time
+adverb	exactly	manner
+adverb	faithfully	manner
+adverb	far	place
+adverb	fast	manner
+adverb	fatally	manner
+adverb	fiercely	manner
+adverb	fondly	manner
+adverb	foolishly	manner
+adverb	fortunately	manner
+adverb	frantically	manner
+adverb	gently	manner
+adverb	gladly	manner
+adverb	gracefully	manner
+adverb	greedily	manner
+adverb	happily	manner
+adverb	hastily	manner
+adverb	honestly	manner
+adverb	hourly	time
+adverb	hungrily	manner
+adverb	innocently	manner
+adverb	inquisitively	manner
+adverb	irritably	manner
+adverb	joyously	manner
+adverb	justly	manner
+adverb	kindly	manner
+adverb	lazily	manner
+adverb	less	degree
+adverb	loosely	manner
+adverb	loudly	manner
+adverb	madly	manner
+adverb	merrily	manner
+adverb	monthly	time
+adverb	more	degree
+adverb	mortally	manner
+adverb	mysteriously	manner
+adverb	nearly	degree
+adverb	neatly	manner
+adverb	nervously	manner
+adverb	never	time
+adverb	noisily	manner
+adverb	not	degree
+adverb	obediently	manner
+adverb	obnoxiously	manner
+adverb	often	time
+adverb	only	degree
+adverb	painfully	manner
+adverb	perfectly	manner
+adverb	politely	manner
+adverb	poorly	manner
+adverb	powerfully	manner
+adverb	promptly	time
+adverb	punctually	manner
+adverb	quickly	manner
+adverb	quietly	manner
+adverb	rapidly	manner
+adverb	rarely	time
+adverb	really	degree
+adverb	recklessly	manner
+adverb	regularly	time
+adverb	reluctantly	manner
+adverb	repeatedly	time
+adverb	rightfully	manner
+adverb	roughly	manner
+adverb	rudely	manner
+adverb	sadly	manner
+adverb	safely	manner
+adverb	seldom	time
+adverb	selfishly	manner
+adverb	seriously	manner
+adverb	shakily	manner
+adverb	sharply	manner
+adverb	shrilly	manner
+adverb	shyly	manner
+adverb	silently	manner
+adverb	sleepily	manner
+adverb	slowly	manner
+adverb	smoothly	manner
+adverb	softly	manner
+adverb	solemnly	manner
+adverb	sometimes	time
+adverb	soon	time
+adverb	speedily	manner
+adverb	stealthily	manner
+adverb	sternly	manner
+adverb	successfully	manner
+adverb	suddenly	time
+adverb	suspiciously	manner
+adverb	swiftly	manner
+adverb	tenderly	manner
+adverb	tensely	manner
+adverb	thoughtfully	manner
+adverb	tightly	manner
+adverb	tomorrow	time
+adverb	truthfully	manner
+adverb	unexpectedly	manner
+adverb	very	degree
+adverb	victoriously	manner
+adverb	violently	manner
+adverb	vivaciously	manner
+adverb	warmly	manner
+adverb	weakly	manner
+adverb	wearily	manner
+adverb	well	manner
+adverb	wildly	manner
+adverb	yearly	time
+adverb	yesterday	time
+
+apology	I apologize
+apology	I beg your forgiveness
+apology	I hope you can forgive me
+apology	I'm not actually sorry
+apology	I'm sorry
+apology	my apologies
+apology	my sincerest condolences
+apology	sorry
+apology	sry
+
+bodypart	ankle	plural=+s
+bodypart	arm	plural=+s
+bodypart	arse	plural=+s
+bodypart	bung	plural=+s
+bodypart	calf	plural=calves
+bodypart	ear	plural=+s
+bodypart	elbow	plural=+s
+bodypart	eye	plural=+s
+bodypart	face	plural=+s
+bodypart	foot	plural=feet
+bodypart	forehead	plural=+s
+bodypart	giblets	plural
+bodypart	groin	plural=+s
+bodypart	head	plural=+s
+bodypart	kidney	plural=+s
+bodypart	knee	plural=+s
+bodypart	leg	plural=+s
+bodypart	lower back	plural=+s
+bodypart	neck	plural=+s
+bodypart	nipple	plural=+s
+bodypart	shin	plural=+s
+bodypart	shoulder	plural=+s
+bodypart	skull	plural=+s
+bodypart	solar plexus	plural=+es
+bodypart	thigh	plural=+s
+bodypart	throat	plural=+s
+
+character	#{noun@proper,concrete}	weight=20
+character	adventurer
+character	anon
+character	artist
+character	baby
+character	baker
+character	banker
+character	bird
+character	boss
+character	boy
+character	brother
+character	bum
+character	bureaucrat
+character	capybara
+character	cat
+character	champion
+character	child
+character	chump
+character	clannie
+character	convict
+character	crimbot
+character	diva
+character	doctor
+character	dog
+character	doggo
+character	dood
+character	dragon
+character	duck
+character	elephant
+character	fairy
+character	father
+character	fish
+character	gamer
+character	girl
+character	God of #{Noun:plural}
+character	Goddess of #{Noun:plural}
+character	goose
+character	hero
+character	hobo
+character	kitten
+character	kitty
+character	lad
+character	lady
+character	lawyer
+character	lovebug
+character	man
+character	manager
+character	mayfly swarm
+character	meme
+character	memer
+character	mer-kin
+character	monkey
+character	mother
+character	mouse
+character	musician
+character	nurse
+character	owl
+character	person
+character	pixie
+character	programmer
+character	pupper
+character	puppy
+character	rat
+character	redditor
+character	rockstar
+character	sea monkee
+character	sister
+character	skeleton
+character	surgeon
+character	tree
+character	veterinarian
+character	weaboo
+character	website
+character	your mom
+
+exclamation	<3~moe~moe~kyun~<3
+exclamation	I am completely flabbergasted
+exclamation	I can't believe it
+exclamation	Jiminy Cricket
+exclamation	amazing
+exclamation	by the rings of Saturn
+exclamation	can you believe this#{?}
+exclamation	check it out
+exclamation	dagnabbit
+exclamation	dang dude
+exclamation	for cryin' out loud
+exclamation	golly gee willickers
+exclamation	goodness gracious
+exclamation	great googly moogly
+exclamation	hey
+exclamation	holy #{expletive}
+exclamation	hoo boy
+exclamation	horosho
+exclamation	hot cross buns
+exclamation	hot diggity dog
+exclamation	is this lore#{?}
+exclamation	ishygddt
+exclamation	it's the nutshack
+exclamation	jeez Louise
+exclamation	jeezo flip
+exclamation	jumpin' catfish
+exclamation	lmao
+exclamation	lol
+exclamation	mamma pajama
+exclamation	nani
+exclamation	no way
+exclamation	no way I don't believe it at all
+exclamation	nope nope nope nope nope
+exclamation	oh boy
+exclamation	oh my #{expletive}
+exclamation	oh my goodness gracious golly gee willickers
+exclamation	oh no
+exclamation	om #{expletive}
+exclamation	omfg
+exclamation	omg
+exclamation	radical
+exclamation	sweet merciful #{expletive}
+exclamation	sweet sassy molassy
+exclamation	sweet zombie #{noun@proper}
+exclamation	that's enough internet for today
+exclamation	this is incredible
+exclamation	well butter my buns
+exclamation	well slap me silly and call me #{noun@proper}
+exclamation	well tie me down and spank my bottom with a wet fish
+exclamation	what in #{character}'s name#{?}
+exclamation	what in #{place}
+exclamation	what in tarnation
+exclamation	what on earth
+exclamation	what the #{expletive}
+exclamation	whoa
+exclamation	wtf
+exclamation	Yay, Jick!	weight=5
+exclamation	Yay, #{noun@TPTB}!
+exclamation	zark off
+
+expletive	booger
+expletive	butt
+expletive	cheese and rice
+expletive	crabapples
+expletive	crap
+expletive	criminalities
+expletive	dang
+expletive	dickens
+expletive	doodlebugs
+expletive	flip flap
+expletive	frick
+expletive	frick frack
+expletive	fricking frick
+expletive	fricking heck
+expletive	frig
+expletive	gosh
+expletive	guacamole
+expletive	heck
+expletive	hecking frick
+expletive	hecking heck
+expletive	hey
+expletive	iced tea
+expletive	jeez
+expletive	mom's spaghetti
+expletive	nerts
+expletive	nutshack
+expletive	shazbot
+expletive	shoot
+expletive	shoot darn
+expletive	todokete
+expletive	wow
+
+noun	Asiago, the Pastamancer	proper; concrete
+noun	Azazel	proper; concrete
+noun	Batfellow	proper; concrete
+noun	Blaine	proper; concrete
+noun	Boris	proper; concrete
+noun	Brie, the Trainer	proper; concrete
+noun	CDMoyer	proper; concrete; TPTB
+noun	Crimbo	positive; abstract; proper; concrete
+noun	Crimbuddha	proper; concrete
+noun	Duncan Disorderly, the Disco Bandit	proper; concrete
+noun	Edam, the Sauceror	proper; concrete
+noun	Gaia'ajh-dsli Ak'lwej	proper; concrete
+noun	Gorgonzola, the Chief Chef	proper; concrete
+noun	Grignr, the Seal Clubber	proper; concrete
+noun	Gunther, Lord of the Smackdown	proper; concrete
+noun	Hotstuff	proper; concrete; TPTB
+noun	Izzy the Lizard	proper; concrete
+noun	Jarlsberg	proper; concrete
+noun	Jick	proper; concrete; TPTB
+noun	Lady Spookyraven	proper; concrete
+noun	Lefty, the Trainer	proper; concrete
+noun	Monster Manuel	proper; concrete
+noun	Nash Crosby	proper; concrete
+noun	Olaf the Janitor	proper; concrete
+noun	Riff	proper; concrete; TPTB
+noun	Rodoric, the Staffcrafter	proper; concrete
+noun	Rudolphus of Crimborg	proper; concrete
+noun	Shifty, the Thief Chief	proper; concrete
+noun	Sneaky Pete	proper; concrete
+noun	Spookloween	positive; abstract; proper
+noun	Spookloween name	positive; abstract; plural=+s
+noun	Stradella, the Accordion Thief	proper; concrete
+noun	Swagger Jack	proper; concrete
+noun	Terri, the Turtle Tamer	proper; concrete
+noun	Torg, the Trainer	proper; concrete
+noun	Uncle Crimbo	proper; concrete
+noun	accidental adventure	negative; abstract; plural=+s
+noun	accomplishment	positive; abstract; plural=+s
+noun	accordion	positive; plural=+s; concrete
+noun	alchohol	positive; mass; concrete
+noun	amazing rng	positive; abstract
+noun	anger	negative; abstract
+noun	bad thing	negative; plural=+s; concrete
+noun	barrel	positive; plural=+s; concrete
+noun	beefiness	positive; abstract
+noun	black cat run	negative; abstract; plural=+s
+noun	blessing	positive; abstract
+noun	booze	positive; concrete
+noun	bravery	positive; abstract
+noun	bronze button	positive; plural=+s; concrete
+noun	chain lightning	positive; concrete
+noun	cheek	positive; abstract
+noun	chutzpah	positive; abstract
+noun	comfort	positive; abstract
+noun	computer	positive; plural=+s; concrete
+noun	curse	negative; abstract; plural=+s
+noun	dancing	positive; abstract
+noun	danger	negative; abstract
+noun	death	negative; abstract
+noun	determination	positive; abstract
+noun	disease	negative; abstract; plural=+s
+noun	downward spiral	negative; abstract
+noun	drunkenness	positive; abstract
+noun	enchantedness	positive; abstract
+noun	family	positive; plural=families; concrete
+noun	fear	negative; abstract
+noun	fortitude	positive; abstract
+noun	fortune	positive; plural=+s; concrete
+noun	fullness	positive; abstract
+noun	fury	negative; abstract
+noun	getting the same pirate insult ten times in a row	negative; abstract
+noun	gold star	positive; plural=+s; concrete
+noun	good thing	positive; plural=+s; concrete
+noun	halation	positive; abstract
+noun	happiness	positive; abstract
+noun	horror	negative; abstract
+noun	joy	positive; abstract
+noun	karma	positive; concrete
+noun	leaderboard run	positive; plural=+s; abstract
+noun	life	positive; abstract; plural=lives
+noun	lightning	positive; concrete
+noun	lightning magic	positive; abstract
+noun	luck	positive; abstract
+noun	madladdity	negative; abstract
+noun	magic	positive; abstract
+noun	magicalness	positive; abstract
+noun	meme	positive; abstract; plural=+s
+noun	misclick	negative; abstract; plural=+s
+noun	misfortune	negative; abstract
+noun	moxie	positive; abstract
+noun	muscle	positive; abstract
+noun	muscleboundness	positive; abstract
+noun	mysteriousness	positive; abstract
+noun	mysticality	positive; abstract
+noun	ninja	positive; plural=+s
+noun	only being able to use the Copperhead route	negative; abstract
+noun	optimality	positive; abstract
+noun	overdrinking early on accident	negative; abstract
+noun	pain	negative; abstract
+noun	pasta	positive; mass; concrete
+noun	pirate	positive; plural=+s; concrete
+noun	plague	negative; abstract; plural=+s
+noun	pleasure	positive; abstract
+noun	poverty	negative; abstract
+noun	pulchritude	positive; abstract
+noun	rage	negative; abstract
+noun	regret	negative; abstract; plural=+s
+noun	robot	positive; plural=+s; concrete
+noun	roguishness	positive; abstract
+noun	royal tea	positive; mass; concrete
+noun	rum	positive; mass; concrete
+noun	sadness	negative; abstract
+noun	sarcasm	positive; abstract
+noun	sauce	positive; mass; concrete
+noun	seal	negative; plural=+s; concrete
+noun	silver moon	positive; plural=+s; concrete
+noun	smarm	positive; abstract
+noun	snow	positive; mass; concrete
+noun	sorrow	negative; abstract
+noun	strengthliness	positive; abstract
+noun	strongness	positive; abstract
+noun	synergy	positive; abstract
+noun	tear	negative; plural=+s; concrete
+noun	terrible rng	negative; abstract
+noun	terror	negative; abstract
+noun	tranquility	positive; abstract
+noun	turtle	positive; plural=+s; concrete
+noun	violence	negative; abstract
+noun	vodka	positive; mass; concrete
+noun	wasted turn	negative; abstract; plural=+s
+noun	whiskey	positive; mass; concrete
+noun	wizardliness	positive; abstract
+
+number	0
+number	0.57721566490153286060651209008240243104215933593992
+number	1.6180339887
+number	2
+number	2.71828
+number	3.1415926
+number	4.6692
+number	5
+number	7
+number	11
+number	13
+number	37
+number	42
+number	314
+number	365
+number	365.2421875
+number	413
+number	666
+number	911
+number	1337
+number	2112
+number	31337
+number	8675309
+number	a random multiple of 5
+number	a bajillion
+
+timeunit	second	plural=+s
+timeunit	sec	plural=+s
+timeunit	minute	plural=+s
+timeunit	min	plural=+s
+timeunit	hour	plural=+s
+timeunit	day	plural=+s
+timeunit	month	plural=+s
+timeunit	year	plural=+s
+timeunit	decade	plural=+s
+timeunit	nanosecond	plural=+s
+timeunit	microsecond	plural=+s
+timeunit	picosecond	plural=+s
+timeunit	light-mile	plural=+s
+timeunit	light-foot	plural=light-feet
+timeunit	shake	plural=+s
+timeunit	jiffy	plural=jiffies
+timeunit	microfortnight	plural=+s
+timeunit	dog year	plural=+s
+timeunit	Friedman	plural=Friedmen
+timeunit	microcentury	plural=microcenturies
+timeunit	nanocentury	plural=nanocenturies
+timeunit	tatum	plural=+s
+timeunit	adventure	plural=+s
+timeunit	turn	plural=+s
+timeunit	fight	plural=+s
+timeunit	combat	plural=+s
+timeunit	non-combat	plural=+s
+timeunit	semi-rare	plural=+s
+timeunit	ascension	plural=+s
+timeunit	moment	plural=+s
+timeunit	season	plural=+s
+timeunit	millisecond	plural=+s
+timeunit	rollover	plural=+s
+timeunit	week	plural=+s
+timeunit	fornight	plural=+s
+
+verb	bless	positive; past=+ed
+verb	bestow	positive; past=+ed
+verb	gift	positive; past=+ed
+verb	improve	positive; past=+d
+verb	adventure	positive; past=+d
+verb	grant	positive; past=+ed
+verb	protect	positive; past=+ed
+verb	kill	negative; past=+ed
+verb	hurt	negative; past=+ed
+verb	eat	negative; past=ate
+verb	destroy	negative; past=+ed
+verb	splatter	negative; past=+ed
+verb	crush	negative; past=+ed
+verb	maim	negative; past=+ed
+verb	torture	negative; past=+d
+verb	wound	negative; past=+ed
+verb	doom	negative; past=+ed
+
+!	!
+!	!!
+!	!!!!!11
+!	!!!!11!
+!	!!@
+!	!1
+!	!111!1!!!!
+!	!?!
+!	#{!}#{!}
+!	.!
+!	?!!
+
+?	#{?}#{?}
+?	/
+?	?
+?	?!!/1?!
+?	?!??!?
+?	?/
+?	?///???
+?	?/??
+?	?>
+?	???>
+?	????
+?	?????
+
+# The actual messages that are meant to use all these word buckets
+message	#{EXCLAMATION}#{!} Once there was #{1=adjective+character} and then #{1} was #{2=verb@negative:past} by #{adjective} #{character}#{!} FWD this time prank within #{number} #{timeunit:plural} or you will be #{2} by #{1}#{!} #{apology} for danger but I would be #{2} by #{1} if I didn't send this to someone, you understand right#{?}
+message	#{EXCLAMATION} #{EXCLAMATION}#{!}#{!} If you forward this message within #{1=number+timeunit:plural}, the #{adjective@positive} #{adjective@positive} #{character} will #{verb@positive} you with #{adjective@positive} times for like, the rest of your #{adjective@positive} life#{?}#{!} But if you don't forward it within #{1}, the #{adjective@negative} #{adjective@negative} #{character} will #{verb@negative} you with #{adjective@negative} times for the entire rest of your whole  #{adjective@negative} life instead. So forward this prank to #{number} #{adjective} adventurers ASAP#{!}
+message	Born #{number} #{timeunit:plural} too soon to explore #{1=place}, born #{number} #{timeunit:plural} too late to explore #{2=place}, born just in time to explore #{3=place}#{!} #{EXCLAMATION}#{!} #{1} is so #{adjective@positive}, and #{2} is so #{adjective@positive}, but #{3} is totally #{adjective@negative} and #{adjective@negative}#{!} I wish I could have explored #{1} or #{2} instead#{!}
+message	It's #{adjective}, this feeling in my #{bodypart}. It's almost as though it came fluttering down from #{place}. The #{adjective} color of this #{timeunit} fills me with #{noun@abstract}. From the moment we #{verb}, the melody of my #{bodypart} has been ringing with #{noun@abstract,positive}. It can't be #{1=verb:past}, it won't be #{1} -- #{Exclamation}#{?} Ring out#{!} Shall I name this #{2=adjective@negative+noun@abstract,negative} "#{3=Noun@abstract} Halation"#{?} I can't wait for our #{4=noun@abstract} to #{5=verb}; it's frustrating, but it's a pure-#{6=bodypart}ed #{7=noun@abstract,positive} called #{8=noun@positive}. Even in this #{9=adjective} fever, I can't #{10=verb}. I'll accept the #{11=noun@abstract,positive} to dive in; it's about to #{12=verb}#{!} Without a #{noun@abstract}, without a #{noun@abstract}, Our #{noun} changes silently. At the thought of the coming #{timeunit}, my #{bodypart}beat quickens. When you feel #{adjective@negative}, I'll come running right away, wanting to #{verb} you #{adverb}, Wherever you are, no matter where, I'll Fly High! Hurry up. Before I knew it, my #{adjective} #{noun@abstract} grew too #{adjective} to contain. It's #{adjective@negative} to never do more than dream of it, I want you to be mine! I don't want to be #{verb:past} by your #{adjective} #{bodypart}. Accept all my #{noun@abstract} for you as it is, #{exclamation}#{!} Ring out#{!} Shall I name this #{2} "#{3} Halation"#{?} I can't wait for our #{4} to #{5}; it's frustrating, but it's a pure-#{6}ed #{7} called #{8}. Even in this #{9} fever, I can't #{10}. I'll accept the #{11} to dive in; it's about to #{12}#{!}
+
+
