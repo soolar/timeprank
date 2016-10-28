@@ -11,7 +11,7 @@ foreach f in $familiars[]
 foreach t in $thralls[]
   bucketsRaw["character"][t.to_string()] = "";
 foreach it in $items[]
-  bucketsRaw["noun"][it.to_string()] = "plural=ITEMPLURAL"; // handled procedurally because ;
+  bucketsRaw["noun"][it.to_string()] = "plural=itemplural"; // handled procedurally because ;
 foreach loc in $locations[]
   bucketsRaw["place"][loc.to_string()] = ""; // TODO: Maybe use some location metadata
 
@@ -114,7 +114,7 @@ string BucketGetDescriptor(string descriptor)
     {
       if(propval.char_at(0) == "+")
         res += propval.substring(1);
-      else if(propval == "ITEMPLURAL")
+      else if(propval == "itemplural")
         res = res.to_item().plural.to_string();
       else
         res = propval;
