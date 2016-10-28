@@ -235,7 +235,7 @@ adjective	wordy
 adjective	wretched	negative
 adjective	young
 adjective	zealous
-adjective	#{adjective} #{adjective}	weight=5
+adjective	#{adjective} #{adjective}	weight=10
 
 adverb	athletically	manner
 adverb	accidentally	manner
@@ -553,6 +553,9 @@ exclamation	Yay, Jick!	weight=5
 exclamation	Yay, #{noun@TPTB}!
 exclamation	zark off
 
+# Yes, I realize that none of these are actually profanities.
+# Personally, I think it's funnier that way.
+# If you think "crap" is a profanity... just why?
 expletive	booger
 expletive	butt
 expletive	cheese and rice
@@ -585,6 +588,9 @@ expletive	shoot darn
 expletive	todokete
 expletive	wow
 
+# for nouns, positive/negative is basically a matter of whether you'd want to be
+# given said object. If that would be a good thing, it's positive, if it would suck,
+# it's negative. Otherwise, it's neither.
 noun	Asiago, the Pastamancer	proper; concrete
 noun	Azazel	proper; concrete
 noun	Batfellow	proper; concrete
@@ -785,6 +791,9 @@ timeunit	fornight	plural=+s
 # pastpart=past participle
 # pres=present participle
 # third=third-person singular simple present tense
+# positive/negative for verbs boils down to if you would want it to happen to you, it's positive
+# if you would very much not want it to happen to you, it's negative
+# if you don't really care, or it doesn't make sense for that verb to be done TO you, it's neither
 verb	abdicate	negative; past,pastpart=+d; pres=abdicating; third=+s
 verb	abet	positive; past,pastpart=+ted; pres=+ting; third=+s
 verb	abide	past=abode; pastpart=abidden; pres=abiding; third=+s
@@ -793,6 +802,7 @@ verb	bestow	positive; with; past,pastpart=+ed; pres=+ing; third=+s
 verb	bless	positive; with; past,pastpart=+ed; pres=+ing; third=+es
 verb	cast	past; pastpart; pres=+ing; third=+s
 verb	chop	negative; past,pastpart=+ped; pres=+ping; third=+s
+verb	cook	negative; past,pastpart=+ed; pres=+ing; third=+s
 verb	crush	negative; past,pastpart=+ed; pres=+ing; third=+ed
 verb	cut	negative; past; pastpart; pres=+ting; third=+s
 verb	dance	positive; past,pastpart=+d; pres=dancing; third=+s
