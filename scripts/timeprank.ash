@@ -28,24 +28,23 @@ void AddToSubBuckets(string bucket, string word, string [int] properties,
   }
   else
   {
-    string [int] propsplit = properties[i].split_string("\\s*=\\s*");
-
     // weight is a meta-property that says to add this word to the subbuckets multiple times
-    if(propsplit[0] == "weight")
+    if(properties[i] == "weight")
     {
-      if(propsplit.count() != 2)
+      if(propertyBucket[bucket][word]["weight"] == "")
       {
         print("Weight without value is invalid, see " + bucket + ": " + word);
         return;
       }
-      AddToSubBuckets(bucket, word, properties, i + 1, subbucket, propsplit[1].to_int());
+      AddToSubBuckets(bucket, word, properties, i + 1, subbucket,
+      propertyBucket[bucket][word]["weight"].to_int());
       return;
     }
 
     AddToSubBuckets(bucket, word, properties, i + 1, subbucket, weight);
     if(subbucket != "")
       subbucket += ",";
-    subbucket += propsplit[0];
+    subbucket += properties[i];
     AddToSubBuckets(bucket, word, properties, i + 1, subbucket, weight);
   }
 }
@@ -53,18 +52,22 @@ void AddToSubBuckets(string bucket, string word, string [int] properties,
 foreach bucket, word, properties in bucketsRaw
 {
   string [int] splitprops = properties.to_lower_case().split_string("\\s*;\\s*");
+  string [int] propertiesPresent;
   sort splitprops by value;
   foreach i,prop in splitprops
   {
     string [int] splitprop = prop.split_string("\\s*=\\s*");
-    string propname = splitprop[0];
-
-    string propval = "true";
+    string propval = "";
     if(splitprop.count() != 1)
       propval = splitprop[1];
-    propertyBucket[bucket][word][propname] = propval;
+
+    foreach j,propname in splitprop[0].split_string("\\s*,\\s*")
+    {
+      propertyBucket[bucket][word][propname] = propval;
+      propertiesPresent[propertiesPresent.count()] = propname;
+    }
   }
-  AddToSubBuckets(bucket, word, splitprops, 0, "", 1);
+  AddToSubBuckets(bucket, word, propertiesPresent, 0, "", 1);
 }
 
 //foreach buck,sub in wordBuckets
