@@ -290,8 +290,8 @@ void TimePrank(string playerName, boolean misspell)
   if(playerName == "random friend")
   {
     string contactspage = visit_url("account_contactlist.php");
-    matcher contactlist = create_matcher("<b>Contact List</b>(.+)<b>Add a Player:</b>" +
-      ".+<b>Ignore List</b>", contactspage);
+    matcher contactlist = create_matcher("Contact List</b>(.+)<b>Add a Player:</b>" +
+      ".+Ignore List</b>", contactspage);
     if(!contactlist.find())
     {
       print("well, something went wrong parsing your contact list, sorry buddy.");
