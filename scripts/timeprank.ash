@@ -287,7 +287,6 @@ void TimePrank(string playerName, boolean misspell)
   string msg = GenerateMessage();
   if(misspell)
     msg = mAKSpeldBaD(msg);
-  print_html(msg);
   if(playerName == "random friend")
   {
     string contactspage = visit_url("account_contactlist.php");
@@ -312,8 +311,9 @@ void TimePrank(string playerName, boolean misspell)
     playerName = friends[0];
     if(friends.count() != 1)
       playerName = friends[random(friends.count())];
-    print("Sending this prank " + playerName + "'s way");
   }
+  print("Sending this prank " + playerName + "'s way");
+  print_html(msg);
   if(playerName != "?")
     cli_execute("timespinner prank " + playerName + " msg=" + msg);
 }
